@@ -1,0 +1,92 @@
+a {
+  color: #ccc !important;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff0000 !important;
+}
+
+div#logo {
+  text-align: left;
+}
+
+div#logo h1 {
+  font-size: 2.5em;
+}
+
+div#content h1 {
+  margin-top: 0;
+}
+
+img.round {
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
+}
+
+.social-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.social-bar a {
+  border-bottom: 0px;
+}
+
+ul.social-bar li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 20px 5px;
+  vertical-align: top;
+}
+
+ul.social-bar a:hover {
+  opacity: 0.4;
+}
+
+.get {
+  display:none;
+}
+
+div#slide2 {
+  background-color: #7ec9ac;
+}
+
+div#slide3 {
+  background-color: #fcead5;
+}
+
+div#slide5 {
+  background-color: #FA9064;
+}
+
+div#content-slide2 {
+  text-align: center;
+}
+
+div#slide3 a {
+  border-bottom: 0;
+}
+
+div#slide3 img {
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
+}
+
+p#SkypeButton_Dropdown_bsnuxcom_1_paraElement {
+  margin: 0;
+  padding: 0;
+}
+
+div#SkypeButton_Call_bsnuxcom_1 a {
+  border-bottom: 0;
+}
