@@ -1,0 +1,7 @@
+magazine: Linux +
+num_articles: 3
+dates: 2007-2008
+articles:
+  - title: "Digikam"
+  - title: "Glade"
+  - title: "Python y GTK+"

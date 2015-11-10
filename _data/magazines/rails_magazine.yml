@@ -1,0 +1,5 @@
+magazine: Rails Magazine
+num_articles: 1
+dates: 2009
+articles:
+  - title: "Ruby on Rails and Flex: Building a new software generation"

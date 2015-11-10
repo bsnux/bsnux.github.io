@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 10 Nov 2015 10:16:24 -0800</pubDate>
+    <lastBuildDate>Tue, 10 Nov 2015 10:16:24 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>How to delete a git remote branch</title>
+        <description>&lt;p&gt;If you need to delete a remote branch you can run the following command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;branch_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 04 Nov 2015 00:00:00 -0800</pubDate>
+        <link>/2015/11/04/how-to-remove-remote-branch.html</link>
+        <guid isPermaLink="true">/2015/11/04/how-to-remove-remote-branch.html</guid>
+        
+        <category>git,</category>
+        
+        <category>dev</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>git undo a merge with conflicts</title>
+        <description>&lt;p&gt;When you merge a branch into another one and then conflicts appear you can come back
+to inital state running the following command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abort&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you’re using &lt;code&gt;git&lt;/code&gt; previous to version &lt;em&gt;1.7.4&lt;/em&gt; then you can run the next command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Mon, 02 Nov 2015 00:00:00 -0800</pubDate>
+        <link>/2015/11/02/git-undo-merge.html</link>
+        <guid isPermaLink="true">/2015/11/02/git-undo-merge.html</guid>
+        
+        <category>git,</category>
+        
+        <category>dev</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Squashing git commits with rebase</title>
+        <description>&lt;p&gt;&lt;em&gt;rebase&lt;/em&gt; git command is very useful for &lt;em&gt;squashing&lt;/em&gt; different commits into an unique
+commit. It helps to reduce the number of commits, specially when all of them are
+related to same functionality.&lt;/p&gt;
+
+&lt;p&gt;Let’s say we want to &lt;em&gt;squash&lt;/em&gt; last four commits into one. We should execute the following
+command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rebase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HEAD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;code&gt;-i&lt;/code&gt; option means &lt;em&gt;interactive&lt;/em&gt; git will display which commits we want to pick up and
+which will be squashed.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Oct 2015 00:00:00 -0700</pubDate>
+        <link>/2015/10/28/squashing-commits.html</link>
+        <guid isPermaLink="true">/2015/10/28/squashing-commits.html</guid>
+        
+        <category>git,</category>
+        
+        <category>dev</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

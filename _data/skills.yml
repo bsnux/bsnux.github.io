@@ -1,0 +1,20 @@
+- skill: Python and Django
+  progress: 95
+- skill: GNU/Linux
+  progress: 97
+- skill: Ruby on Rails
+  progress: 60
+- skill: PostgreSQL, MySQL, Redis, MongoDB
+  progress: 90
+- skill: nginx, gunicorn, uwsgi, Passenger
+  progress: 85
+- skill: Haystack, RabbitMQ, Solr
+  progress: 80
+- skill: DevOps
+  progress: 85
+- skill: Algorithms & Computer Science
+  progress: 80
+- skill: JavaScript
+  progress: 80
+- skill: HTML & CSS
+  progress: 65

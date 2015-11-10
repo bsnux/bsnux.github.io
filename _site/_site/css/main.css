@@ -143,20 +143,3 @@ ul.social-bar a:hover {
 	border-radius: 15px 50px;
 	padding: 15px;
 }
-
-.progress .progress-bar {
-	background-color: #7ec9ac;
-}
-
-a {
-	color: #8F6809;
-}
-
-a:hover {
-	color: #FFA11D;
-}
-
-p {
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 1.3em;
-}

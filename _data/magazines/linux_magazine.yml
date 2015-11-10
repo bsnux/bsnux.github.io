@@ -1,0 +1,14 @@
+magazine: Linux Magazine
+num_articles: 10
+dates: 2007-2008
+articles:
+  - title: "Andalusia drops Debian, embraces Ubuntu"
+  - title: "Spanish Debian Developers meet again"
+  - title: "GNOME in Spain"
+  - title: "The Open Source World Met in Spain"
+  - title: "Debian´s Spanish Stronghold"
+  - title: "Graduate in Free and Open Software"
+  - title: "No to Software Patens in Europe"
+  - title: "Free software laptops in Spain"
+  - title: "Free electronic voting system"
+  - title: "A spanish model for the rest of the world"
