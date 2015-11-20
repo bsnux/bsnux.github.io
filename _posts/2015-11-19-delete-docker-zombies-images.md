@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deleting Docker zombies images"
-date:   2015-11-04
+date:   2015-11-19
 tags: docker, sysadmin
 ---
 
