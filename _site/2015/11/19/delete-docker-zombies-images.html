@@ -59,16 +59,21 @@
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 		<header class="post-header">
-			<h1 class="post-title" itemprop="name headline">How to delete a git remote branch</h1>
-			<p class="post-meta"><time datetime="2015-11-04T00:00:00-08:00" itemprop="datePublished">Nov 4, 2015</time></p>
-			<p><em>Tags</em>: git,dev</p>
+			<h1 class="post-title" itemprop="name headline">Deleting Docker zombies images</h1>
+			<p class="post-meta"><time datetime="2015-11-19T00:00:00-08:00" itemprop="datePublished">Nov 19, 2015</time></p>
+			<p><em>Tags</em>: docker,sysadmin</p>
 		</header>
 
 		<div class="post-content" itemprop="articleBody">
-			<p>If you need to delete a remote branch you can run the following command:</p>
+			<p>When you’re working building <em>Docker</em> images and something is wrong, then
+<em>zombies</em> images can be created. We should clean-up those images because
+they’re taking room on the hard drive. The following command help us to
+do that:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="ss">:&lt;</span><span class="n">branch_name</span><span class="o">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">docker</span> <span class="n">images</span> <span class="o">|</span> <span class="n">grep</span> <span class="s1">'none'</span> <span class="o">|</span>  <span class="n">awk</span> <span class="s1">'{ print $3 }'</span>  <span class="o">|</span> <span class="k">while</span> <span class="n">read</span> <span class="n">x</span> <span class="p">;</span> <span class="k">do</span> <span class="n">docker</span> <span class="n">rmi</span> <span class="vg">$x</span><span class="p">;</span> <span class="n">done</span></code></pre></figure>
 
+<p>Keep in mind that those <em>zombies</em> images are identified by <code>&lt;none&gt;</code> value in the <code>REPOSITORY</code>
+column in the output of the <code>docker ps -a</code> command.</p>
 
 		</div>
 

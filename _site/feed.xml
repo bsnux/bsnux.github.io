@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Arturo Fernandez - Software Engineer</title>
+    <description>Arturo Fernandez personal website. Software Engineer and Technical book author.
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Nov 2015 10:28:59 -0800</pubDate>
-    <lastBuildDate>Tue, 10 Nov 2015 10:28:59 -0800</lastBuildDate>
+    <pubDate>Tue, 12 Jan 2016 10:32:15 -0800</pubDate>
+    <lastBuildDate>Tue, 12 Jan 2016 10:32:15 -0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Deleting Docker zombies images</title>
+        <description>&lt;p&gt;When you’re working building &lt;em&gt;Docker&lt;/em&gt; images and something is wrong, then
+&lt;em&gt;zombies&lt;/em&gt; images can be created. We should clean-up those images because
+they’re taking room on the hard drive. The following command help us to
+do that:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;none&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;{ print $3 }&#39;&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rmi&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Keep in mind that those &lt;em&gt;zombies&lt;/em&gt; images are identified by &lt;code&gt;&amp;lt;none&amp;gt;&lt;/code&gt; value in the &lt;code&gt;REPOSITORY&lt;/code&gt;
+column in the output of the &lt;code&gt;docker ps -a&lt;/code&gt; command.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Nov 2015 00:00:00 -0800</pubDate>
+        <link>/2015/11/19/delete-docker-zombies-images.html</link>
+        <guid isPermaLink="true">/2015/11/19/delete-docker-zombies-images.html</guid>
+        
+        <category>docker,</category>
+        
+        <category>sysadmin</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Searching text in git commits</title>
+        <description>&lt;p&gt;If you need to search for a specific string into git commits, you can do that
+executing the following command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;your_string&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 18 Nov 2015 00:00:00 -0800</pubDate>
+        <link>/2015/11/18/git-log-search.html</link>
+        <guid isPermaLink="true">/2015/11/18/git-log-search.html</guid>
+        
+        <category>git,</category>
+        
+        <category>dev</category>
+        
+        
+      </item>
     
       <item>
         <title>How to delete a git remote branch</title>
